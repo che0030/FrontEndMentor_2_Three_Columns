@@ -1,11 +1,7 @@
-*{
-    box-sizing: border-box;
-}
-
 body {
     /* border: 2px solid red; */
     padding: 5rem 1.25rem;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     background-color: hsl(0, 0%, 95%);
 }
 body p {
@@ -56,7 +52,8 @@ button {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 17px;
-    padding: 15px 35px;
+    /* padding: 15px 35px; */
+    padding: 15px 15%;
     margin-top: 20px;
     background-color: white;
     border: none;
@@ -87,11 +84,14 @@ button {
         justify-content: center;
     }
     .triple-container {
+        display: flex; 
         flex-direction: row;
         width: 65vw;
     }
-    .sedan-container, .sedan-container, .luxury-container {
+    .sedan-container, .suv-container, .luxury-container {
         max-width: 33%;
+        box-sizing: border-box;
+        /* flex: 1; */
     }
     .sedan-container {
         border-radius: 10px 0 0 10px;
